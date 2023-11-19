@@ -70,11 +70,11 @@
                     </div>
                     <!-- Mobile Sidebar -->
                     <div class="fixed inset-0 bg-slate-900/75" x-cloak x-show="open" x-transition.opacity></div>
-                    <div @click.away="open = false;"
-                        class="fixed inset-y-0 right-0 z-50 w-screen max-w-lg bg-white" x-cloak x-show="open"
-                        x-transition:enter="transition ease-out duration-500" x-transition:enter-end="translate-x-0"
-                        x-transition:enter-start="translate-x-full" x-transition:leave="transition ease-in duration-500"
-                        x-transition:leave-end="translate-x-full" x-transition:leave-start="translate-x-0">
+                    <div @click.away="open = false;" class="fixed inset-y-0 right-0 z-50 w-screen max-w-lg bg-white"
+                        x-cloak x-show="open" x-transition:enter="transition ease-out duration-500"
+                        x-transition:enter-end="translate-x-0" x-transition:enter-start="translate-x-full"
+                        x-transition:leave="transition ease-in duration-500" x-transition:leave-end="translate-x-full"
+                        x-transition:leave-start="translate-x-0">
                         <div class="flex pt-8 pr-10">
                             <button @click="open = false;"
                                 class="relative w-10 h-10 ml-auto text-gray-500 focus:outline-none hover:text-red-600">
@@ -155,7 +155,24 @@
             </div>
         </div>
     </header>
-
+    <!-- hero -->
+    <section class="text-gray-600 body-font">
+        <div class="max-w-6xl mx-auto flex px-8 py-24 md:flex-row flex-col">
+            <div class="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col md:items-start mb-16 md:mb-0  text-left">
+                <h1 class="title-font sm:text-7xl text-3xl mb-4 tracking-wide font-medium text-gray-900">
+                    <span class="text-sm tracking-widest">Hi,my name is</span>
+                    <br>Ye Naing Tun.
+                    <br> <span class="text-gray-500">I Build Things For Web.</span>
+                </h1>
+                <p class="mb-8 leading-relaxed">I am a web developer specializing in PHP, Laravel, and WordPress custom theme development. I bring hands-on experience in backend and a frontend. Let's build something great together!</p>
+                <div class="flex">
+                    <button
+                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Say Hello
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="./src/main.js"></script>
 </body>
