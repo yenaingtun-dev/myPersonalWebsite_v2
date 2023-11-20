@@ -13,8 +13,8 @@
 <body>
     <!-- navbar -->
     <header class="bg-white">
-        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8" x-cloak x-data="{open:false}">
-            <div class="flex h-16 items-center justify-between">
+        <div class="max-w-screen-xl px-4 mx-auto sm:px-6 lg:px-8" x-cloak x-data="{open:false}">
+            <div class="flex items-center justify-between h-16">
                 <div class="flex-1 md:flex md:items-center md:gap-12">
                     <a class="block text-teal-600" href="/">
                         <span>Ye Naing Tun</span>
@@ -25,25 +25,25 @@
                     <nav aria-label="Global" class="hidden md:block">
                         <ul class="flex items-center gap-6 text-sm">
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#about">
                                     About
                                 </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#experience">
                                     Experience
                                 </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#work">
                                     Work
                                 </a>
                             </li>
 
                             <li>
-                                <a class="text-gray-500 transition hover:text-gray-500/75" href="/">
+                                <a class="text-gray-500 transition hover:text-gray-500/75" href="#contact">
                                     Contact
                                 </a>
                             </li>
@@ -59,8 +59,8 @@
 
                         <div class="block md:hidden">
                             <button @click="open = !open;" x-cloak
-                                class="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                class="p-2 text-gray-600 transition bg-gray-100 rounded hover:text-gray-600/75">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
                                     stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                                 </svg>
@@ -88,7 +88,7 @@
                         <ul class="flex flex-col pl-10 mt-10">
                             <li class="pb-6">
                                 <a @click="open = false;" class="text-2xl text-gray-700 hover:text-blue-400"
-                                    href="#home">Home</a>
+                                    href="/">Home</a>
                             </li>
                             <li class="pb-6">
                                 <a @click="open = false;" class="text-2xl text-gray-700 hover:text-blue-400"
@@ -96,11 +96,11 @@
                             </li>
                             <li class="pb-6">
                                 <a @click="open = false;" class="text-2xl text-gray-700 hover:text-blue-400"
-                                    href="#experiences">Experience</a>
+                                    href="#experience">Experience</a>
                             </li>
                             <li class="pb-6">
                                 <a @click="open = false;" class="text-2xl text-gray-700 hover:text-blue-400"
-                                    href="#projects">Work</a>
+                                    href="#work">Work</a>
                             </li>
                             <li class="pb-6">
                                 <a @click="open = false;" class="text-2xl text-gray-700 hover:text-blue-400"
@@ -156,9 +156,9 @@
     </header>
     <!-- hero -->
     <section class="text-gray-600">
-        <div class="max-w-6xl mx-auto flex px-8 py-24 md:flex-row flex-col">
-            <div class="lg:flex-grow lg:pr-24 md:pr-16 flex flex-col mb-16 md:mb-0">
-                <h1 class="title-font sm:text-7xl text-3xl mb-4 tracking-wide font-medium text-gray-900">
+        <div class="flex flex-col max-w-6xl px-8 py-24 mx-auto md:flex-row">
+            <div class="flex flex-col mb-16 lg:flex-grow lg:pr-24 md:pr-16 md:mb-0">
+                <h1 class="mb-4 text-3xl font-medium tracking-wide text-gray-900 title-font sm:text-7xl">
                     <span class="text-sm tracking-widest">Hi,my name is</span>
                     <br />Ye Naing Tun. <br />
                     <span class="text-gray-500">I Build Things For Web.</span>
@@ -170,7 +170,7 @@
                 </p>
                 <div class="flex">
                     <a href="mailto:yenaingtun425@gmail.com"
-                        class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                        class="inline-flex px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
                         Say Hello
                     </a>
                 </div>
@@ -178,10 +178,10 @@
         </div>
     </section>
     <!-- about -->
-    <section class="text-gray-600">
-        <div class="max-w-6xl mx-auto flex px-8 py-24 md:flex-row flex-col">
-            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col mb-16 md:mb-0 ">
-                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
+    <section class="text-gray-600" id="about">
+        <div class="flex flex-col max-w-6xl px-8 py-24 mx-auto md:flex-row">
+            <div class="flex flex-col mb-16 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0 ">
+                <h1 class="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
                     About Me
                 </h1>
                 <p class="mb-5 leading-relaxed">
@@ -217,19 +217,19 @@
                     </span>
                 </p>
             </div>
-            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
                 <img class="object-cover object-center rounded" alt="hero"
                     src="https://avatars.githubusercontent.com/u/59411234" />
             </div>
         </div>
     </section>
     <!-- exerpeience -->
-    <section class="text-gray-600">
-        <div class="max-w-6xl mx-auto flex px-8 py-40 flex-col">
-            <h1 class="title-font sm:text-4xl text-3xl mb-8 font-medium text-gray-900">
+    <section class="text-gray-600" id="experience">
+        <div class="flex flex-col max-w-6xl px-8 py-40 mx-auto">
+            <h1 class="mb-8 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
                 Where I've Worked
             </h1>
-            <dl class="-my-3 divide-y divide-gray-100 text-sm p-8 rounded-lg border border-gray-100 shadow-sm">
+            <dl class="p-8 -my-3 text-sm border border-gray-100 divide-y divide-gray-100 rounded-lg shadow-sm">
                 <div class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4">
                     <dt class="font-medium text-gray-900">Company Name</dt>
                     <dd class="text-gray-700 sm:col-span-2">Myint Thu Kha Nadi Co., Ltd</dd>
@@ -257,11 +257,14 @@
         </div>
     </section>
     <!-- work -->
-    <section class="text-gray-600">
-        <div class="max-w-6xl mx-auto flex flex-col px-8 py-40">
+    <section class="text-gray-600" id="work">
+        <div class="flex flex-col max-w-6xl px-8 py-40 mx-auto">
+            <h1 class="mb-8 text-3xl font-medium text-gray-900 title-font sm:text-4xl">
+                Some Things I’ve Built
+            </h1>
             <div class="grid gap-20 place-items-center">
-                <div class="rounded-md  shadow-lg">
-                    <div class="md:flex px-4 leading-none">
+                <div class="rounded-md shadow-lg">
+                    <div class="px-4 leading-none md:flex">
                         <div class="flex-none">
                             <img src="https://user-images.githubusercontent.com/59411234/254458489-01a50d2c-312f-4953-8ac8-6d2a936c40d0.png"
                                 alt="pic"
@@ -273,7 +276,7 @@
                             <p class="my-4 text-sm text-left">That allows programs to read out their text content
                                 normally from the device's default speech synthesizer.
                             </p>
-                            <div class="flex flex-col flex-wrap sm:flex-row my-4 space-y-2 space-x-0 sm:space-y-0 sm:space-x-2">
+                            <div class="flex flex-col flex-wrap my-4 space-x-0 space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
                                 <span
                                     class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">
                                     JavaScript
@@ -287,7 +290,7 @@
                                     TailwindCSS
                                 </span>
                             </div>
-                            <div class="text-xs flex space-x-3">
+                            <div class="flex space-x-3 text-xs">
                                 <a target="blank" href="https://github.com/yenaingtun-dev/Text-to-speech">
                                     <svg class="w-5 h-5 hover:text-gray-300" xmlns="http://www.w3.org/2000/svg"
                                         role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -314,8 +317,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-md  shadow-lg">
-                    <div class="md:flex px-4 leading-none">
+                <div class="rounded-md shadow-lg">
+                    <div class="px-4 leading-none md:flex">
                         <div class="flex-col mb-8 md:mb-0">
                             <p class="pt-4 text-2xl font-bold">Employees-API CRUD</p>
                             <hr class="mt-3" data-content="">
@@ -323,7 +326,7 @@
                                 Passport. Employee CRUD with GraphQL. Excel Export and Import ( employee count
                                 `10,000`).
                             </p>
-                            <div class="flex flex-col flex-wrap sm:flex-row my-4 space-y-2 space-x-0 sm:space-y-0 sm:space-x-2">
+                            <div class="flex flex-col flex-wrap my-4 space-x-0 space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
                                 <span
                                     class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">
                                     Laravel
@@ -337,7 +340,7 @@
                                     GraphQL
                                 </span>
                             </div>
-                            <div class="text-xs flex space-x-3">
+                            <div class="flex space-x-3 text-xs">
                                 <a target="blank" href="https://github.com/yenaingtun-dev/Employees-API">
                                     <svg class="w-5 h-5 hover:text-gray-300" xmlns="http://www.w3.org/2000/svg"
                                         role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -358,8 +361,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-md  shadow-lg">
-                    <div class="md:flex px-4 leading-none">
+                <div class="rounded-md shadow-lg">
+                    <div class="px-4 leading-none md:flex">
                         <div class="flex-none">
                             <img src="https://user-images.githubusercontent.com/59411234/254461063-c011ba5b-2524-4934-9fbf-53d472abbdd8.png"
                                 alt="pic"
@@ -371,7 +374,7 @@
                             <p class="my-4 text-sm text-left">A job scraper it fetch data from jobnet and jobsinyangon
                                 websites. Using javascript with fetch for axios, cheerio and express js.
                             </p>
-                            <div class="flex flex-col flex-wrap sm:flex-row my-4 space-y-2 space-x-0 sm:space-y-0 sm:space-x-2">
+                            <div class="flex flex-col flex-wrap my-4 space-x-0 space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
                                 <span
                                     class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">
                                     Node JS
@@ -389,7 +392,7 @@
                                     Axio
                                 </span>
                             </div>
-                            <div class="text-xs flex space-x-3">
+                            <div class="flex space-x-3 text-xs">
                                 <a target="_blank" href="https://github.com/yenaingtun-dev/job-scraper">
                                     <svg class="w-5 h-5 hover:text-gray-300" xmlns="http://www.w3.org/2000/svg"
                                         role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -405,15 +408,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="rounded-md  shadow-lg">
-                    <div class="md:flex px-4 leading-none">
+                <div class="rounded-md shadow-lg">
+                    <div class="px-4 leading-none md:flex">
                         <div class="flex-col mb-8 md:mb-0">
                             <p class="pt-4 text-2xl font-bold">Tic Tac Toe</p>
                             <hr class="mt-3" data-content="">
                             <p class="my-4 text-sm text-left">Vanilla JS Tic Tac Toe project user can play against with
                                 the another player.It is Mobile Responsive.
                             </p>
-                            <div class="flex flex-col flex-wrap sm:flex-row my-4 space-y-2 space-x-0 sm:space-y-0 sm:space-x-2">
+                            <div class="flex flex-col flex-wrap my-4 space-x-0 space-y-2 sm:flex-row sm:space-y-0 sm:space-x-2">
                                 <span
                                     class="whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-sm text-purple-700">
                                     HTML
@@ -427,7 +430,7 @@
                                     JavaScript
                                 </span>
                             </div>
-                            <div class="text-xs flex space-x-3">
+                            <div class="flex space-x-3 text-xs">
                                 <a target="_blank" href="https://github.com/yenaingtun-dev/Odin-Project-Tic-Tac-Toe">
                                     <svg class="w-5 h-5 hover:text-gray-300" xmlns="http://www.w3.org/2000/svg"
                                         role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -460,35 +463,35 @@
                     </div>
                 </div>
                 <a target="_blank" href="https://github.com/yenaingtun-dev?tab=repositories"
-                    class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+                    class="inline-flex px-6 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">
                     Show More
                 </a>
             </div>
         </div>
     </section>
     <!-- contact -->
-    <section class="text-gray-600">
-        <div class="max-w-6xl mx-auto flex flex-col px-8 py-40">
-            <div class="flex flex-col text-center w-full mb-4">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Get In Touch</h1>
-                <p class="mx-auto leading-relaxed text-base">I am currently looking for new opportunities. Whether you
+    <section class="text-gray-600" id="contact">
+        <div class="flex flex-col max-w-6xl px-8 py-40 mx-auto">
+            <div class="flex flex-col w-full mb-4 text-center">
+                <h1 class="mb-5 text-3xl font-medium text-gray-900 title-font sm:text-4xl">Get In Touch</h1>
+                <p class="mx-auto text-base leading-relaxed">I am currently looking for new opportunities. Whether you
                     have a question or just want to say hi, I will try my best to
                     get back to you!</p>
             </div>
             <div class="flex flex-col mx-auto">
                 <a href="mailto:yenaingtun425@gmail.com"
-                    class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Say
+                    class="px-8 py-2 text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600">Say
                     Hello</a>
             </div>
         </div>
     </section>
     <!-- footer -->
     <footer class="text-gray-600 body-font">
-        <div class="max-w-screen-xl px-4 pt-20 pb-5 sm:px-6 lg:px-8 mx-auto flex items-center sm:flex-row flex-col">
-            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">
+        <div class="flex flex-col items-center max-w-screen-xl px-4 pt-20 pb-5 mx-auto sm:px-6 lg:px-8 sm:flex-row">
+            <p class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-gray-200 sm:py-2 sm:mt-0">
                 Designed & Built by <a target="_blank" href="https://github.com/yenaingtun-dev">Ye Naing Tun</a>
             </p>
-            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <span class="inline-flex justify-center mt-4 sm:ml-auto sm:mt-0 sm:justify-start">
                     <a class="ml-3" href="https://github.com/yenaingtun-dev" target="_blank">
                         <svg class="w-5 h-5 hover:text-gray-800" height="32" viewBox="0 0 24 24" width="32"
                             xmlns="http://www.w3.org/2000/svg">
