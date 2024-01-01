@@ -26,9 +26,9 @@
 
     <body>
         <!-- navbar -->
-        <header class="bg-white">
+        <header class="bg-white dark:bg-[#0077B6]">
             <div
-                class="fixed z-40 w-full max-w-screen-xl px-4 mx-auto bg-white shadow-lg sm:px-6 lg:px-8"
+                class="fixed z-40 w-full px-4 mx-auto bg-white shadow-lg sm:px-6 lg:px-8"
                 x-cloak
                 x-data="{open:false}"
                 id="navbar"
@@ -79,6 +79,21 @@
                                         href="#contact"
                                     >
                                         Contact
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="text-gray-500 transition hover:text-[#0077B6] light-icon">
+                                        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-gray-500 transition hover:text-[#0077B6] dark-icon">
+                                        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                                        </svg>
                                     </a>
                                 </li>
                             </ul>
@@ -321,7 +336,7 @@
         <section class="text-gray-600" id="about">
             <div class="flex flex-col max-w-6xl px-8 py-24 mx-auto md:flex-row">
                 <div
-                    class="flex flex-col mb-16 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0"
+                    class="flex flex-col mb-10 lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:mb-0"
                 >
                     <h1
                         class="mb-4 text-3xl font-medium text-gray-900 title-font sm:text-4xl"
@@ -345,31 +360,31 @@
                         Here are a few technologies I’ve been working with
                         recently:
                         <br class="mb-2" />
-                        <span class="space-x-2">
+                        <div class="mt-2 sm:space-x-2">
                             <span
-                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white"
+                                class="whitespace-nowrap rounded-full mr-1 sm:mr-0 bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white"
                             >
                                 PHP
                             </span>
                             <span
-                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white"
+                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white mr-1 sm:mr-0"
                             >
                                 Laravel
                             </span>
                             <span
-                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white"
+                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white mr-1 sm:mr-0"
                             >
                                 WordPress
                             </span>
                             <span
-                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white"
+                                class="whitespace-nowrap rounded-full bg-[#00B4D8] px-2.5 py-0.5 text-sm text-white mr-1 sm:mr-0"
                             >
                                 JavaScript
                             </span>
-                        </span>
+                        </div>
                     </p>
                 </div>
-                <div class="w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
+                <div class="w-full sm:w-5/6 lg:max-w-lg lg:w-full md:w-1/2">
                     <img
                         class="object-cover object-center rounded"
                         alt="hero"
@@ -387,7 +402,7 @@
                     Where I've Worked
                 </h1>
                 <dl
-                    class="p-8 -my-3 text-sm border border-gray-100 divide-y divide-gray-100 rounded-lg shadow-sm"
+                    class="p-2 -my-3 text-sm border border-gray-100 divide-y divide-gray-100 rounded-lg shadow-sm sm:p-8"
                 >
                     <div
                         class="grid grid-cols-1 gap-1 p-3 sm:grid-cols-3 sm:gap-4"
@@ -445,11 +460,11 @@
                 <div class="grid gap-20 place-items-center">
                     <div class="rounded-md shadow-lg">
                         <div class="px-4 leading-none md:flex">
-                            <div class="flex-none">
+                            <div class="flex-none w-full sm:w-1/2">
                                 <img
                                     src="https://user-images.githubusercontent.com/59411234/254458489-01a50d2c-312f-4953-8ac8-6d2a936c40d0.png"
                                     alt="pic"
-                                    class="h-72 w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
+                                    class="h-72 w-full sm:w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
                                 />
                             </div>
                             <div class="flex-col mb-3 md:mb-0">
@@ -596,22 +611,22 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex-none">
+                            <div class="flex-none w-full sm:w-1/2">
                                 <img
                                     src="https://user-images.githubusercontent.com/59411234/284076535-511c32f0-82a3-44c7-bea0-9f473698cff0.png"
                                     alt="pic"
-                                    class="h-72 w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
+                                    class="h-72 w-full sm:w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
                                 />
                             </div>
                         </div>
                     </div>
                     <div class="rounded-md shadow-lg">
                         <div class="px-4 leading-none md:flex">
-                            <div class="flex-none">
+                            <div class="flex-none w-full sm:w-1/2">
                                 <img
                                     src="https://user-images.githubusercontent.com/59411234/254461063-c011ba5b-2524-4934-9fbf-53d472abbdd8.png"
                                     alt="pic"
-                                    class="h-72 w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
+                                    class="h-72 w-full sm:w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
                                 />
                             </div>
                             <div class="flex-col mb-3 md:mb-0">
@@ -760,22 +775,22 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="flex-none">
+                            <div class="flex-none w-full sm:w-1/2">
                                 <img
                                     src="https://firebasestorage.googleapis.com/v0/b/myproject-c21df.appspot.com/o/screenshot.png?alt=media&token=74fd847b-db6c-48fb-8503-519083c850e6"
                                     alt="pic"
-                                    class="h-72 w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
+                                    class="h-72 w-full sm:w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
                                 />
                             </div>
                         </div>
                     </div>
                     <div class="rounded-md shadow-lg">
                         <div class="px-4 leading-none md:flex">
-                            <div class="flex-none">
+                            <div class="flex-none w-full sm:w-1/2">
                                 <img
                                     src="https://user-images.githubusercontent.com/59411234/284076238-151628a6-bed4-44a5-86c1-afaa8e2795ab.png"
                                     alt="pic"
-                                    class="h-72 w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
+                                    class="h-72 w-full sm:w-[90%] rounded-md shadow-2xl transform -translate-y-4 border-4 border-gray-300"
                                 />
                             </div>
                             <div class="flex-col mb-8 md:mb-0">
