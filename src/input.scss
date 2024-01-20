@@ -11,3 +11,6 @@ html {
 body * {
     @apply transition-colors duration-1000;
 }
+.active a {
+    color: white;
+}
