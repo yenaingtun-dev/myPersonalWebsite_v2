@@ -11,6 +11,11 @@ html {
 body * {
     @apply transition-colors duration-1000;
 }
+@media screen and (prefers-color-scheme: dark) {
+    .active a {
+        color: white;
+    }
+}
 .active a {
-    color: white;
+    color: #00b4d8;
 }

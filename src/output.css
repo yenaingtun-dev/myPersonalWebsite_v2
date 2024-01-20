@@ -1156,8 +1156,14 @@ body * {
   transition-duration: 1000ms;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .active a {
+    color: white;
+  }
+}
+
 .active a {
-  color: white;
+  color: #00b4d8;
 }
 
 .hover\:bg-\[\#0077B6\]:hover {
