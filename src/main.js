@@ -77,11 +77,15 @@ darkIconMobile.addEventListener("click", () => {
 
 themeCheck();
 
+// navbar active on scroll
 let section = document.querySelectorAll("section");
 let lists = document.querySelectorAll(".list");
-function activeLink(li) {
+let lists_mobile = document.querySelectorAll(".list_mobile");
+
+function activeLink(lis) {
     lists.forEach((item) => item.classList.remove("active"));
-    li.classList.add("active");
+    lists_mobile.forEach((item) => item.classList.remove("active"));
+    lis.forEach((li) => li.parentElement.classList.add("active"));
 }
 lists.forEach((item) =>
     item.addEventListener("click", function () {
@@ -97,10 +101,8 @@ window.onscroll = () => {
         let id = sec.getAttribute("id");
 
         if (top >= offset && top < offset + height) {
-            const target = document.querySelector(
-                `[href='#${id}']`
-            ).parentElement;
-            activeLink(target);
+            const targets = document.querySelectorAll(`[href='#${id}']`);
+            activeLink(targets);
         }
     });
 };
