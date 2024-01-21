@@ -1068,6 +1068,11 @@ video {
   color: rgb(0 180 216 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1086,6 +1091,11 @@ video {
 .text-gray-900 {
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1130,8 +1140,20 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-none {
+  transition-property: none;
+}
+
+.delay-0 {
+  transition-delay: 0s;
+}
+
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.duration-0 {
+  transition-duration: 0s;
 }
 
 .ease-in {
@@ -1176,6 +1198,11 @@ body * {
   color: rgb(0 119 182 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#00B4D8\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 180 216 / var(--tw-text-opacity));
+}
+
 .hover\:text-\[\#0a66c2\]:hover {
   --tw-text-opacity: 1;
   color: rgb(10 102 194 / var(--tw-text-opacity));
@@ -1184,6 +1211,11 @@ body * {
 .hover\:text-\[\#1a8cd8\]:hover {
   --tw-text-opacity: 1;
   color: rgb(26 140 216 / var(--tw-text-opacity));
+}
+
+.hover\:text-black:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .hover\:text-blue-400:hover {
@@ -1238,6 +1270,11 @@ body * {
 :is(.dark .dark\:text-gray-500) {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-white:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
