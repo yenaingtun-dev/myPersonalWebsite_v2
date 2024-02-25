@@ -6,9 +6,9 @@ const darkIconMobile = document.querySelector(".dark-icon-mobile");
 let userTheme = "light";
 const initialData = false;
 let isDarkMode = JSON.parse(localStorage.getItem("isDarkMode")) || initialData;
-const systemDarkMode = window.matchMedia(
-    "(prefers-color-scheme: dark)"
-).matches;
+// const systemDarkMode = window.matchMedia(
+//     "(prefers-color-scheme: dark)"
+// ).matches;
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 const themeCheck = () => {
@@ -66,6 +66,7 @@ darkIcon.addEventListener("click", () => {
 });
 
 darkIconMobile.addEventListener("click", () => {
+    alert("herer");
     document.documentElement.classList.remove("dark");
     userTheme = "light";
     lightIconMobile.parentElement.classList.remove("hidden");
