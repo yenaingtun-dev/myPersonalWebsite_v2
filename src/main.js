@@ -37,8 +37,8 @@ const themeCheck = () => {
 };
 
 lightIcon.addEventListener("click", () => {
-    document.documentElement.classList.add("dark");
     userTheme = "dark";
+    document.documentElement.classList.add("dark");
     lightIcon.parentElement.classList.add("hidden");
     darkIcon.parentElement.classList.remove("hidden");
     lightIconMobile.parentElement.classList.add("hidden");
@@ -46,18 +46,18 @@ lightIcon.addEventListener("click", () => {
     localStorage.setItem("isDarkMode", true);
 });
 lightIconMobile.addEventListener("click", () => {
-    document.documentElement.classList.add("dark");
     userTheme = "dark";
+    document.documentElement.classList.add("dark");
     lightIconMobile.parentElement.classList.add("hidden");
     darkIconMobile.parentElement.classList.remove("hidden");
     lightIcon.parentElement.classList.add("hidden");
-    darkIcon.parentElement.classList.remove("hidden");
+    darkIcon.parentElement.classList.add("hidden");
     localStorage.setItem("isDarkMode", true);
 });
 
 darkIcon.addEventListener("click", () => {
-    document.documentElement.classList.remove("dark");
     userTheme = "light";
+    document.documentElement.classList.remove("dark");
     lightIcon.parentElement.classList.remove("hidden");
     darkIcon.parentElement.classList.add("hidden");
     lightIconMobile.parentElement.classList.remove("hidden");
@@ -66,9 +66,8 @@ darkIcon.addEventListener("click", () => {
 });
 
 darkIconMobile.addEventListener("click", () => {
-    alert("herer");
-    document.documentElement.classList.remove("dark");
     userTheme = "light";
+    document.documentElement.classList.remove("dark");
     lightIconMobile.parentElement.classList.remove("hidden");
     darkIconMobile.parentElement.classList.add("hidden");
     lightIcon.parentElement.classList.remove("hidden");
